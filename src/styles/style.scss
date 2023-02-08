@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+$font-color: black;
+$base-color: #218A3D;
+$border-color: #B3B3B3;
+$footer-bg: #155724;
+
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: $font-color;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: $font-color;
+    font-family: 'Roboto', sans-serif;
+}
+.section {
+    padding-top: 113px;
+}
+.wrapper {
+    display: block;
+    margin: 0 auto;
+    max-width: 1512px;
+}
+.header {
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-bottom: 1px solid $border-color;
+}
+.header__wrapper {
+    padding: 24px 0px 24px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.f-frame {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+    margin-right: 56px;
+}
+.frame__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 27px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $base-color;
+    border: 1px solid $base-color;
+    border-radius: 56px;
+    margin-right: 35px;
+}
+.list-pic {
+    margin-left: 14px;
+    transition: all .3s ease;
+}
+.frame__list:focus .list-pic {
+    transform: rotate(180deg);
+    transition: all .3s ease;
+}
+.frame__list:focus .sublist {
+    display: block;
+    transition: all .3s ease;
+}
+.sublist {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 43px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.sublist__item {
+    padding: 10px 26px;
+    background: white;
+    transition: all .2s ease;
+}
+.sublist__item:hover {
+    background-color: $base-color;
+    transition: all .2s ease;
+}
+.sublist__item a {
+    color: $base-color;
+}
+.sublist__item:hover a {
+    color: white;
+}
+.frame__nav {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.nav__item {
+    margin-right: 32px;
+    position: relative;
+}
+.nav__item::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 1px;
+    height: 2px;
+    opacity: 0;
+    background-color: $base-color;
+    transition: all .3s ease;
+}
+.nav__item:hover::after {
+    opacity: 1;
+    width: 40px;
+    transition: all .3s ease;
+}
+.item__link {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $font-color;
+}
+.s-frame {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.nam__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $font-color;
+}
+.search__btn {
+    border: 0;
+    background: url(/src/images/Vector\ \(Stroke\).svg) center no-repeat;
+    height: 18.608964920043945px;
+    width: 18.608964920043945px;
+    margin-left: 31px;
+}
+
+
+
+.cours__title-txt {
+    margin-bottom: 48px;
+
+}
+.cours__grid-pic {
+    border-bottom: 2px solid $base-color;
+    margin-bottom: 22px;
+}
+.cours__info {
+    padding-left: 10px;
+}
+.title__of__cours-txt {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 123.69%;
+    color: $font-color;
+    margin-bottom: 8px;
+}
+.cours__num {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 149.19%;
+    color: $font-color;
+}
+.cours__grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+    margin-bottom: 88px;
+}
+.cours__grid {
+    margin-bottom: 49px;
+}
+.cours__btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 107px;
+}
+.all__cours {
+    padding: 10px 39px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 149.19%;
+    color: $base-color;
+    border: 2px solid $base-color;
+    transition: all .3s ease;
+}
+.all__cours:hover {
+    background: $base-color;
+    color: #FFFFFF;
+    transition: all .3s ease;
+}
+
+
+
+
+footer {
+    background-color: $footer-bg;
+}
+.footer__wrapper {
+    border-bottom: 1px solid $base-color;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 51px 0px 48px 0px;
+}
+.logo__frame {
+    display: flex;
+    flex-direction: column;
+}
+.footer__logo {
+    margin-bottom: 32px;
+}
+.text__frame-txt-1 {
+    width: 593px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 123.69%;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+.text__frame-txt-2 {
+    width: 593px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.footer__num {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+.second__num {
+    margin-bottom: 20px;
+}
+.footer__item {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.footer__bot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+.footer__bot-txt {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}

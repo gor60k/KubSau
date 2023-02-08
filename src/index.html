@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses from KubSau</title>
+    <style>@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  padding-top: 113px;
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1512px;
+}
+
+.header {
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-bottom: 1px solid #B3B3B3;
+}
+
+.header__wrapper {
+  padding: 24px 0px 24px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-frame {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 56px;
+}
+
+.frame__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px 10px 27px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #218A3D;
+  border: 1px solid #218A3D;
+  border-radius: 56px;
+  margin-right: 35px;
+}
+
+.list-pic {
+  margin-left: 14px;
+  transition: all 0.3s ease;
+}
+
+.frame__list:focus .list-pic {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+.frame__list:focus .sublist {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.sublist {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 43px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.sublist__item {
+  padding: 10px 26px;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.sublist__item:hover {
+  background-color: #218A3D;
+  transition: all 0.2s ease;
+}
+
+.sublist__item a {
+  color: #218A3D;
+}
+
+.sublist__item:hover a {
+  color: white;
+}
+
+.frame__nav {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__item {
+  margin-right: 32px;
+  position: relative;
+}
+
+.nav__item::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 1px;
+  height: 2px;
+  opacity: 0;
+  background-color: #218A3D;
+  transition: all 0.3s ease;
+}
+
+.nav__item:hover::after {
+  opacity: 1;
+  width: 40px;
+  transition: all 0.3s ease;
+}
+
+.item__link {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+}
+
+.s-frame {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.nam__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+}
+
+.search__btn {
+  border: 0;
+  background: url(/src/images/Vector\ \(Stroke\).svg) center no-repeat;
+  height: 18.60896492px;
+  width: 18.60896492px;
+  margin-left: 31px;
+}
+
+.cours__title-txt {
+  margin-bottom: 48px;
+}
+
+.cours__grid-pic {
+  border-bottom: 2px solid #218A3D;
+  margin-bottom: 22px;
+}
+
+.cours__info {
+  padding-left: 10px;
+}
+
+.title__of__cours-txt {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 123.69%;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.cours__num {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 149.19%;
+  color: black;
+}
+
+.cours__grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  margin-bottom: 88px;
+}
+
+.cours__grid {
+  margin-bottom: 49px;
+}
+
+.cours__btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 107px;
+}
+
+.all__cours {
+  padding: 10px 39px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 149.19%;
+  color: #218A3D;
+  border: 2px solid #218A3D;
+  transition: all 0.3s ease;
+}
+
+.all__cours:hover {
+  background: #218A3D;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+footer {
+  background-color: #155724;
+}
+
+.footer__wrapper {
+  border-bottom: 1px solid #218A3D;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 51px 0px 48px 0px;
+}
+
+.logo__frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  margin-bottom: 32px;
+}
+
+.text__frame-txt-1 {
+  width: 593px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 123.69%;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.text__frame-txt-2 {
+  width: 593px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.footer__num {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.second__num {
+  margin-bottom: 20px;
+}
+
+.footer__item {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.footer__bot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.footer__bot-txt {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="f-frame"><img class="header__logo" src="images/Kubsau.svg" alt="Logo">
+            <button class="frame__list">Курсы<img class="list-pic" src="/src/images/arrow.svg" alt="arrow">
+              <ul class="sublist">
+                <li class="sublist__item"><a href="#">Тут курс</a></li>
+                <li class="sublist__item"><a href="#">Тут курс</a></li>
+                <li class="sublist__item"><a href="#">Тут курс</a></li>
+                <li class="sublist__item"><a href="#">Тут курс</a></li>
+                <li class="sublist__item"><a href="#">Тут курс</a></li>
+              </ul>
+            </button>
+            <ul class="frame__nav">
+              <li class="nav__item"> <a class="item__link" href="#">О нас</a></li>
+              <li class="nav__item"><a class="item__link" href="#">Преподаватели</a></li>
+              <li class="nav__item"> <a class="item__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="s-frame"><a class="nam__link" href="#">8 (800) 555-35-35</a>
+            <button class="search__btn"> </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="section">
+        <h2 class="cours__title-txt">Курсы</h2>
+        <div class="cours__grids">
+          <div class="cours__column">
+            <div class="cours__grid"><img class="cours__grid-pic" src="/src/images/unsplash_-dtKoaHpi9M.jpg" alt="Kartinka">
+              <div class="cours__info">
+                <p class="title__of__cours-txt">Агрономи</p>
+                <p class="cours__num">100 курсов</p>
+              </div>
+            </div>
+            <div class="cours__grid"><img class="cours__grid-pic" src="/src/images/unsplash_-dtKoaHpi9M.jpg" alt="Kartinka">
+              <div class="cours__info">
+                <p class="title__of__cours-txt">Агрономи</p>
+                <p class="cours__num">100 курсов</p>
+              </div>
+            </div>
+          </div>
+          <div class="cours__column">
+            <div class="cours__grid"><img class="cours__grid-pic" src="/src/images/unsplash_-dtKoaHpi9M.jpg" alt="Kartinka">
+              <div class="cours__info">
+                <p class="title__of__cours-txt">Агрономи</p>
+                <p class="cours__num">100 курсов</p>
+              </div>
+            </div>
+            <div class="cours__grid"><img class="cours__grid-pic" src="/src/images/unsplash_-dtKoaHpi9M.jpg" alt="Kartinka">
+              <div class="cours__info">
+                <p class="title__of__cours-txt">Агрономи</p>
+                <p class="cours__num">100 курсов</p>
+              </div>
+            </div>
+          </div>
+          <div class="cours__column">
+            <div class="cours__grid"><img class="cours__grid-pic" src="/src/images/unsplash_-dtKoaHpi9M.jpg" alt="Kartinka">
+              <div class="cours__info">
+                <p class="title__of__cours-txt">Агрономи</p>
+                <p class="cours__num">100 курсов</p>
+              </div>
+            </div>
+            <div class="cours__grid"><img class="cours__grid-pic" src="/src/images/unsplash_-dtKoaHpi9M.jpg" alt="Kartinka">
+              <div class="cours__info">
+                <p class="title__of__cours-txt">Агрономи</p>
+                <p class="cours__num">100 курсов</p>
+              </div>
+            </div>
+          </div>
+          <div class="cours__column">
+            <div class="cours__grid"><img class="cours__grid-pic" src="/src/images/unsplash_-dtKoaHpi9M.jpg" alt="Kartinka">
+              <div class="cours__info">
+                <p class="title__of__cours-txt">Агрономи</p>
+                <p class="cours__num">100 курсов</p>
+              </div>
+            </div>
+            <div class="cours__grid"><img class="cours__grid-pic" src="/src/images/unsplash_-dtKoaHpi9M.jpg" alt="Kartinka">
+              <div class="cours__info">
+                <p class="title__of__cours-txt">Агрономи</p>
+                <p class="cours__num">100 курсов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cours__btn">
+          <button class="all__cours">Все курсы</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__wrapper">
+          <div class="logo__frame"><img class="footer__logo" src="/src/images/logo 1.svg" alt="Logo"><img src="/src/images/Frame 53.svg" alt="Logo"></div>
+          <div class="text__frame">
+            <p class="text__frame-txt-1">ФГБОУ ВО «Кубанский государственный аграрный университет имени И. Т. Трубилина»</p>
+            <p class="text__frame-txt-2">Курс позволит вам научиться правильно держать иголку и подбирать красивый нитки к любой ткани Курс позволит вам научиться правильно держать иголку и подбирать красивый нитки</p>
+          </div>
+          <div class="link__frame">
+            <p class="footer__num">+7 (918) 969-74-84</p>
+            <p class="footer__num second__num">+7 (861) 221-54-91</p>
+            <p class="footer__item">350044, г. Краснодар, ул. Калинина, 13</p>
+            <p class="footer__item">Turlij.s@kubsau.ru</p>
+          </div>
+        </div>
+        <div class="footer__bot">
+          <p class="footer__bot-txt">© 2020 ФГБОУ ВО «Кубанский государственный аграрный университет имени И. Т. Трубилина»</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

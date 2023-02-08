@@ -1,0 +1,32 @@
+-
+    var siteTitle = "courses from KubSau"
+    var lang = "ru"
+
+doctype html
+html(lang="lang")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{siteTitle}
+        style
+            include styles/style.css
+    body
+        include modules/header
+
+        block content
+
+            .wrapper
+                .section
+                    h2.cours__title-txt Курсы
+                
+                    .cours__grids
+                        include modules/cours-grid
+                        include modules/cours-grid
+                        include modules/cours-grid
+                        include modules/cours-grid
+                    
+                    .cours__btn
+                        button.all__cours Все курсы
+        include modules/footer
+
